@@ -1,0 +1,79 @@
+/*
+TAGs no CSS
+propriedade: valor;
+
+Exemplo:
+color: blue;
+*/
+
+body /* p, a */ {
+  /* como as duas propriedades ("p" e "a") se repetem, então elas podem juntar-se*/
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+#hero {
+/*o id é representado pelo # no CSS*/
+  width: 592px;
+  margin: 0 auto 72px;
+  
+  /* margin-top: 0;
+     margin-right: auto;
+     margin-bottom: 72px;
+     margin-left: auto; */
+
+  /* quando for 1 valor: esse valor se refere aos 4 margin */
+  /* quando forem 2 valores: o primeiro valor do margin se refere a top e bottom e
+  o segundo a right e left */
+  /* quando forem 3 valores: o primeiro valor do margin se refere ao top,
+  o segundo a right e left e o terceiro para baixo */
+  /* quando forem 4 valores: o primeiro valor do margin se refere a top, o segundo a right,
+  o terceiro a bottom e o quarto a left */
+}
+
+#hero img {
+  margin-bottom: 72px;
+}
+
+h1 {
+  /* A propriedade: "font-weight: bold;" já vem por padrão no h1 */
+  font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+span, a {
+  color: #FF9900;
+}
+
+p, #footer {
+  color: #7D7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#footer a + a{
+  /* a + a define que você pega o <a> que está na div footer
+  que anterior a ele tenha outro <a> e aplique tal propriedade */
+  margin-left: 28px;
+}
+
+#footer .line /* usar o # é para id | usar o . é para class */ {
+  width: 568px;
+  height: 0px;
+  margin: 0 auto 8px;
+  border: 1px solid #ECEFF2;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
